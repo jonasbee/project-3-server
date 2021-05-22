@@ -1,6 +1,5 @@
 // import Item from ........ models/item.js ?
 
-
 import { NotFound } from '../middleware/errorHandler'
 
 async function index(req, res, next) {
