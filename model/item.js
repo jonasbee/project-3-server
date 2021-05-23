@@ -9,7 +9,7 @@ const itemSchema = new mongoose.Schema({
   // ? Referenced relationship. Each item is linked to a particular user.
   // ? The type is a unique Object in MongoDB
   // ? Ref - Use the User schema
-  // user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
 })
 
 // ? Export the model as an Item
