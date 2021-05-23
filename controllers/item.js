@@ -1,4 +1,4 @@
-import Item from '../model/items.js'
+import Item from '../model/item.js'
 // import { NotFound } from '../middleware/errorHandler.js'
 
 
@@ -29,6 +29,17 @@ async function show(req, res, next) {
   }
 }
 
+async function create(req, res, next) {
+  try {
+    const newItem = await Item.create(req.body)
+    res.status(201).json(newItem)
+  } catch (e) {
+    next(e)
+  }
+}
+
 export default {
-  index,show,
+  index,
+  show,
+  create,
 }
