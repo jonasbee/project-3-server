@@ -1,7 +1,7 @@
-// import Item from '. ./models/item.js ???'
-import connectToDb from './connectToDb.js'
+
+import connectToDb from '../connectToDb.js'
 import mongoose from 'mongoose'
-import itemData from './item.js'
+import itemData from './items.js'
 
 
 async function seedDatabase() {

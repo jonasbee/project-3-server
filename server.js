@@ -1,5 +1,5 @@
 import app from './app.js'
-import  connectToDb from './db/data/connectToDb.js'
+import  connectToDb from './db/connectToDb.js'
 
 
 async function startApp (){
