@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { dbURL } from '../config/environment'
+import { dbURL } from '../config/environment.js'
 
 
 export default function connectToDb(){

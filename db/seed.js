@@ -1,7 +1,8 @@
 
-import connectToDb from '../connectToDb.js'
+import connectToDb from './connectToDb.js'
 import mongoose from 'mongoose'
-import itemData from './items.js'
+import Item from '../model/items.js'
+import itemData from './data/items.js'
 
 
 async function seedDatabase() {
@@ -12,7 +13,7 @@ async function seedDatabase() {
     await mongoose.connection.db.dropDatabase()
     console.log('removed all items')
   
-    const item = await item.create(itemData)
+    const item = await Item.create(itemData)
     console.log(`🤖${item.length} items created`)
 
     await mongoose.connection.close()

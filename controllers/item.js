@@ -1,5 +1,6 @@
 import Item from '../model/items.js'
-import { NotFound } from '../middleware/errorHandler'
+// import { NotFound } from '../middleware/errorHandler.js'
+
 
 async function index(req, res, next) {
   try {
@@ -18,7 +19,8 @@ async function show(req, res, next) {
     const item = await Item.findById(id)
 
     if (!item) {
-      throw new NotFound('No food found.')
+      // throw new NotFound('No food found.')
+      // 
     }
 
     res.status(200).json(item)
@@ -27,6 +29,6 @@ async function show(req, res, next) {
   }
 }
 
-export {
-  index,show
+export default {
+  index,show,
 }

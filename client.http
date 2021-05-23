@@ -1,7 +1,6 @@
-GET http://localhost:4000/api/item 
+GET http://localhost:4000/api/item/
 
 
 
 ###
-GET http://localhost:4000/api/
-pus
+GET http://localhost:4000/api/item/60aa2bb76ef4416b288c878d

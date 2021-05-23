@@ -8,7 +8,7 @@ const router = express.Router()
 router.route('/item')
   .get(itemController.index)
 
-router.route('/item/:itemId')
+router.route('/item/:id')
   .get(itemController.show)
 
 

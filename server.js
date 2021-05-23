@@ -10,7 +10,7 @@ async function startApp (){
     app.listen(4000,()=> ('Express is now running'))
   } catch (e){
     console.log('Something went wrong starting app...')
-    console.log.apply(e)
+    console.log(e)
   }
 }
 startApp()
