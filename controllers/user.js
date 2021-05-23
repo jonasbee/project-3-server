@@ -1,4 +1,4 @@
-import User from '../model/users.js'
+import User from '../model/user.js'
 
 import jwt from 'jsonwebtoken'
 import { secret } from '../config/environment.js'

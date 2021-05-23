@@ -13,14 +13,11 @@ router.route('/item')
 router.route('/item/:id')
   .get(itemController.show)
 
-<<<<<<< HEAD
 router.route('/register')
   .post(userController.register)
 
 router.route('/login')
   .post(userController.login)
 
-=======
->>>>>>> development
 export default router
 

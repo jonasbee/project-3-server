@@ -12,8 +12,6 @@ const userSchema = new mongoose.Schema({
 })
 
 
-
-
 userSchema.pre('save', function encryptPassword(next) {
 
   if (this.isModified('password')) {
