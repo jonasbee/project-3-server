@@ -1,4 +1,4 @@
-import Item from '../model/items.js'
+import Item from '../model/item.js'
 // import { NotFound } from '../middleware/errorHandler.js'
 
 
