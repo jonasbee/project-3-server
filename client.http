@@ -9,32 +9,58 @@
 GET http://localhost:4000/api/items/
 
 ###
+@itemId = 60abab29248393b5b9dfea37
+@itemId1 = 60abab29248393b5b9dfea38
+@userId = 60abab29248393b5b9dfea33
+###
+
 GET http://localhost:4000/api/items/{{itemId}}
 
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFhOGZiZDE5ZWI4ODljOTMxYjU1NTgiLCJpYXQiOjE2MjE3OTE1MTIsImV4cCI6MTYyMjA1MDcxMn0.wAmkhWoi1iarrn-iFHThRC3oxSBfW73bKqtFJiRZYp8
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
 
 {
   "quantity": "2",
   "expiryDate": "06-06-2021"
 }
-
 ###
-GET  http://localhost:4000/api/{{userId}}/items/60aba5a814dbd9b06ad4d9d3
+POST http://localhost:4000/api/{{userId}}/items/{{itemId1}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYTVhNzE0ZGJkOWIwNmFkNGQ5Y2YiLCJpYXQiOjE2MjE4NjE4NjAsImV4cCI6MTYyMjEyMTA2MH0.0B8HKQ7_j1CV-im6VhaeYgmwX9u1-VV--94Y5FU5jUw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+
+{
+  "quantity": "1",
+  "expiryDate": "06-06-2025"
+}
 
 ###
+GET http://localhost:4000/api/{{userId}}/items/60ababe56cbe33b5d1891381
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+
+###
+GET http://localhost:4000/api/{{userId}}/items
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+###
+
 POST http://localhost:4000/api/register
 content-type: application/json
 
 {
   "username": "abubakar1",
   "password": "pass",
-  "email": "abubakar1@email.com"
+  "email": "abubakar1@email.com",
+  "addressDetails": {
+      "postalCode": "54321",
+      "city": "London",
+      "street": "Downing Street",  
+      "streetNo": "10",
+      "region": "United Kingdom",
+      "country": "England"
+  }
 }
 
 #####

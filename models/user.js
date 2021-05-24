@@ -5,10 +5,20 @@ import mongooseHidden from 'mongoose-hidden'
 
 import bcrypt from 'bcrypt'
 
+const addressSchema = new mongoose.Schema({
+  postalCode: { type: String, required: true },
+  city: { type: String, required: true },
+  street: { type: String, required: true },
+  streetNo: { type: String, required: true },
+  region: { type: String, required: true },
+  country: { type: String, required: true },
+})
+
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true, hide: true },
+  addressDetails: addressSchema,
 })
 
 
@@ -26,7 +36,7 @@ userSchema.methods.validatePassword = function validatePassword(password) {
   return bcrypt.compareSync(password, this.password)
 }
 
-userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true } }))
+userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true, addressDetails: true } }))
 userSchema.plugin(uniqueValidator)
 
 
