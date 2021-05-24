@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import User from '../model/user.js'
+import User from '../models/user.js'
 import { secret } from '../config/environment.js'
 
 export default function secureRoute(req, res, next) {
@@ -17,7 +17,7 @@ export default function secureRoute(req, res, next) {
     if (err) {
       return res.status(401).json({ message: 'Unauthorized ' })
     }
-    const user = User.findById(payload.userId)
+    const user = await User.findById(payload.userId)
     if (!user) {
       return res.status(401).json({ message: 'Unauthorized ' })
     }
