@@ -2,7 +2,6 @@ import InventoryItem from '../models/inventoryItem.js'
 // import { NotFound } from '../middleware/errorHandler.js'
 import Item from '../models/item.js'
 
-
 async function index(req, res, next) {
   try {
     // ! we only want the logged in users inventoryItems, not all
@@ -16,7 +15,6 @@ async function index(req, res, next) {
     next(e)
   }
 }
-
 
 async function show(req, res, next) {
   try {
