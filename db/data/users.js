@@ -11,6 +11,7 @@ export default [
       region: 'United Kingdom',
       country: 'United Kingdom',
     },
+    preference: 'vegetarian',
   },
   {
     username: 'jonas',
@@ -37,5 +38,6 @@ export default [
       region: 'United Kingdom',
       country: 'England',
     },
+    preference: 'vegan',
   }
 ]
