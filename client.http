@@ -1,3 +1,11 @@
+###
+@itemId = 60abaf38b14743b301bd01b9
+@userId = 60ab8a8802d7b7afaf8c185d
+###
+
+
+
+
 GET http://localhost:4000/api/items/
 
 ###
@@ -7,9 +15,7 @@ GET http://localhost:4000/api/items/{{itemId}}
 POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFhOGZiZDE5ZWI4ODljOTMxYjU1NTgiLCJpYXQiOjE2MjE3OTE1MTIsImV4cCI6MTYyMjA1MDcxMn0.wAmkhWoi1iarrn-iFHThRC3oxSBfW73bKqtFJiRZYp8
-=======
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiOGE4ODAyZDdiN2FmYWY4YzE4NWQiLCJpYXQiOjE2MjE4NTUxMjUsImV4cCI6MTYyMjExNDMyNX0.yxXngBcb3uzD-9b3q11TafvHHBFlJoAJPL3Wx5Wkvsc
->>>>>>> development
+
 
 {
   "quantity": "2",
@@ -17,24 +23,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiO
 }
 
 ###
-GET  http://localhost:4000/api/{{userId}}/items/60ab92766d4fb6b1fb099dfb
+GET  http://localhost:4000/api/{{userId}}/items/60aba5a814dbd9b06ad4d9d3
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiOGE4ODAyZDdiN2FmYWY4YzE4NWQiLCJpYXQiOjE2MjE4NTUxMjUsImV4cCI6MTYyMjExNDMyNX0.yxXngBcb3uzD-9b3q11TafvHHBFlJoAJPL3Wx5Wkvsc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYTVhNzE0ZGJkOWIwNmFkNGQ5Y2YiLCJpYXQiOjE2MjE4NjE4NjAsImV4cCI6MTYyMjEyMTA2MH0.0B8HKQ7_j1CV-im6VhaeYgmwX9u1-VV--94Y5FU5jUw
 
 ###
 POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-<<<<<<< HEAD
-  "username": "Ornella",
-  "password": "pass",
-  "email": "ornella@email.com"
-=======
   "username": "abubakar1",
   "password": "pass",
   "email": "abubakar1@email.com"
->>>>>>> development
 }
 
 #####
@@ -43,11 +43,7 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-<<<<<<< HEAD
-  "email": "ornella@email.com",
-  "password": "pass"
-=======
   "email": "jonas@jonas.com",
   "password": "jonas"
->>>>>>> development
 }
+
