@@ -1,6 +1,8 @@
 ###
-@itemId = 60abaf38b14743b301bd01b9
-@userId = 60ab8a8802d7b7afaf8c185d
+@itemId = 60abbb10c949d3b9d1459257
+@userId = 60abb355266e95b6dbadf1a4
+
+@userId1=60abbb10c949d3b9d1459259
 ###
 
 
@@ -9,9 +11,11 @@
 GET http://localhost:4000/api/items/
 
 ###
-@itemId = 60abab29248393b5b9dfea37
-@itemId1 = 60abab29248393b5b9dfea38
-@userId = 60abab29248393b5b9dfea33
+@itemId = 60abbb10c949d3b9d1459257
+@itemId1 = 60abbb10c949d3b9d1459258
+@userId = 60abb355266e95b6dbadf1a4
+
+# @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYjM1NTI2NmU5NWI2ZGJhZGYxYTQiLCJpYXQiOjE2MjE4NjYwNDMsImV4cCI6MTYyMjEyNTI0M30.UiMvD6lrgxpmhyRGs4Va4SapaFlXt6h-uoCplkOddzc
 ###
 
 GET http://localhost:4000/api/items/{{itemId}}
@@ -19,33 +23,32 @@ GET http://localhost:4000/api/items/{{itemId}}
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
-
-{
-  "quantity": "2",
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
+ 
+ {
+ "quantity": "2",
   "expiryDate": "06-06-2021"
 }
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId1}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
 
 {
-  "quantity": "1",
-  "expiryDate": "06-06-2025"
+"quantity": "2",
+  "expiryDate": "06-06-2021"
 }
 
 ###
-GET http://localhost:4000/api/{{userId}}/items/60ababe56cbe33b5d1891381
+GET http://localhost:4000/api/{{userId}}/items/60abb2a8267185b62b1e3c59
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
+###
+GET http://localhost:4000/api/{{userId1}}/items
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
 
 ###
-GET http://localhost:4000/api/{{userId}}/items
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
-###
-
 POST http://localhost:4000/api/register
 content-type: application/json
 
