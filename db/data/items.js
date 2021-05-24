@@ -2,31 +2,26 @@ export default [
   {
     name: 'tomato',
     icon: '🍅',
-    quantity: 2,
-    expiryDate: '06/07/2021',
+    category: 'vegetable',
   },
   {
     name: 'pasta',
     icon: '🍝',
-    quantity: 1,
-    expiryDate: '06/07/2021',
+    category: 'pasta',
   },
   {
     name: 'milk',
     icon: '🥛',
-    quantity: 1,
-    expiryDate: '06/07/2021',
+    category: 'dairy',
   },
   {
     name: 'prawns',
     icon: '🦐',
-    quantity: 8,
-    expiryDate: '06/07/2021',
+    category: 'fish',
   },
   {
     name: 'cheese',
     icon: '🧀',
-    quantity: 1,
-    expiryDate: '06/07/2021',
+    category: 'dairy',
   }
 ]

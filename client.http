@@ -1,29 +1,40 @@
-GET http://localhost:4000/api/item/
+GET http://localhost:4000/api/items/
 
 ###
-@itemId = 60aa85f259b08798b414a56b
-GET http://localhost:4000/api/item/{{itemId}}
+GET http://localhost:4000/api/items/{{itemId}}
 
 ###
-POST http://localhost:4000/api/item/
+POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFhOGZiZDE5ZWI4ODljOTMxYjU1NTgiLCJpYXQiOjE2MjE3OTE1MTIsImV4cCI6MTYyMjA1MDcxMn0.wAmkhWoi1iarrn-iFHThRC3oxSBfW73bKqtFJiRZYp8
+=======
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiOGE4ODAyZDdiN2FmYWY4YzE4NWQiLCJpYXQiOjE2MjE4NTUxMjUsImV4cCI6MTYyMjExNDMyNX0.yxXngBcb3uzD-9b3q11TafvHHBFlJoAJPL3Wx5Wkvsc
+>>>>>>> development
 
 {
-  "name": "chicken",
-  "icon": "🍗",
   "quantity": "2",
   "expiryDate": "06-06-2021"
 }
+
+###
+GET  http://localhost:4000/api/{{userId}}/items/60ab92766d4fb6b1fb099dfb
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiOGE4ODAyZDdiN2FmYWY4YzE4NWQiLCJpYXQiOjE2MjE4NTUxMjUsImV4cCI6MTYyMjExNDMyNX0.yxXngBcb3uzD-9b3q11TafvHHBFlJoAJPL3Wx5Wkvsc
 
 ###
 POST http://localhost:4000/api/register
 content-type: application/json
 
 {
+<<<<<<< HEAD
   "username": "Ornella",
   "password": "pass",
   "email": "ornella@email.com"
+=======
+  "username": "abubakar1",
+  "password": "pass",
+  "email": "abubakar1@email.com"
+>>>>>>> development
 }
 
 #####
@@ -32,6 +43,11 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
+<<<<<<< HEAD
   "email": "ornella@email.com",
   "password": "pass"
+=======
+  "email": "jonas@jonas.com",
+  "password": "jonas"
+>>>>>>> development
 }

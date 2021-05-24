@@ -1,4 +1,4 @@
-import User from '../model/user.js'
+import User from '../models/user.js'
 
 import jwt from 'jsonwebtoken'
 import { secret } from '../config/environment.js'
@@ -11,7 +11,6 @@ async function register(req, res, next) {
     next(e)
   }
 }
-
 
 async function login(req,res,next) {
   try {
