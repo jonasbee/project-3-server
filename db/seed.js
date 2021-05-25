@@ -22,17 +22,20 @@ async function seedDatabase() {
     console.log(`👏🏼 ${users.length}users created`)
     console.log(users)
 
-    // ? Assign a user to each item
-    const itemDataWithUsers = itemData.map(item => {
-      return { ...item, user: users[1]._id }
-    })
-
-    console.log(itemDataWithUsers)
+    // // ? Assign a user to each item
+    // const itemDataWithUsers = itemData.map(item => {
+    //   return { ...item, user: users[1]._id }
+    // })
+    // console.log(itemDataWithUsers)
 
 
     // ? Now I can seed my database using mongoose....
-    const item = await Item.create(itemDataWithUsers)
-    console.log(`🤖 ${item.length} item created!`)
+    const item = await Item.create(itemData)
+    console.log(`🤖 ${item.length} recipes created!`)
+
+    // ? seeding the recipes
+    const recipes = await Recipe.create(recipeData)
+    console.log(`🤖 ${recipes.length} item created!`)
 
     
     const recipe = await Recipe.create(recipeData)
