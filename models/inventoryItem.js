@@ -10,3 +10,5 @@ const InventoryItemSchema = new mongoose.Schema({
 
 // ? Export the model as an Item
 export default mongoose.model('InventoryItem', InventoryItemSchema)
+
+
