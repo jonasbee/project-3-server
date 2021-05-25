@@ -21,6 +21,8 @@ router.route('/:userId/recipes')
   .get(secureRoute, recipeController.checkForRecipe)
 router.route('/recipes')
   .get(recipeController.index)
+router.route('/recipes/:recipeId')
+  .get(recipeController.show)
 
 // ! inventory items
 router.route('/:userId/items/:itemId')

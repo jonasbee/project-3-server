@@ -10,6 +10,8 @@
 @itemAppleJuice = 60acf2d23cc142cfc492d43c
 
 @inventoryItemId = 60acf44318f778cfe144c676
+@recipeId= 60acf2d23cc142cfc492d43d
+
 ###
 
 GET http://localhost:4000/api/items/
@@ -17,6 +19,13 @@ GET http://localhost:4000/api/items/
 ###
 
 GET http://localhost:4000/api/items/{{itemId}}
+
+###
+GET http://localhost:4000/api/recipes/
+
+###
+GET http://localhost:4000/api/recipes/{{recipeId}}
+
 
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
