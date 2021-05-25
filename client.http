@@ -1,7 +1,7 @@
 
 @itemId = 60acf2d23cc142cfc492d433
 @itemId1 = 60acf2d23cc142cfc492d434
-@userId = 60acf2d23cc142cfc492d42f
+@userId = 60ad44547f9154f001bee6c5
 
 @itemStrawberry = 60acf2d23cc142cfc492d438
 @itemRedGrape = 60acf2d23cc142cfc492d439
@@ -9,17 +9,10 @@
 @itemBanana = 60ad22aa786db3ffce1509da
 @itemAppleJuice = 60ad22aa786db3ffce1509de
 
-@inventoryItemId = 60acf44318f778cfe144c676
-@recipeId= 60acf2d23cc142cfc492d43d
+@inventoryItemId = 60ad45e37f9154f001bee6ce
+@recipeId = 60acf2d23cc142cfc492d43d
 
 ###
-@itemId = 60abbb10c949d3b9d1459257
-@itemId1 = 60abbb10c949d3b9d1459258
-@userId = 60abb355266e95b6dbadf1a4
-
-@recipeId= 60ad22ab786db3ffce1509
-
-
 
 GET http://localhost:4000/api/items/
 
@@ -40,7 +33,7 @@ GET http://localhost:4000/api/items/search?name=strawberry
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "2",
@@ -49,46 +42,44 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId1}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
-"quantity": "2",
+  "quantity": "2",
   "expiryDate": "06-06-2021"
 }
 
 ###
 GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 ###
-GET http://localhost:4000/api/{{userId1}}/items
-Content-Type: application/json
+GET http://localhost:4000/api/{{userId}}/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
-
-DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryId}}
-Authorization: Bearer 
-
-###
-
-=======
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+####
+DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 ###
 
 DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 ###
 
 PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
-  "quantity": "100"
+  "quantity": "100",
+  "isShared": "true"
 }
 
+###
+GET http://localhost:4000/api/inventoryitemsmap
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 ###
 
 POST http://localhost:4000/api/register
@@ -97,6 +88,7 @@ content-type: application/json
 {
   "username": "abubakar1",
   "password": "pass",
+  "passwordConfirmation": "pass",
   "email": "abubakar1@email.com",
   "addressDetails": {
       "postalCode": "54321",
@@ -122,13 +114,13 @@ GET http://localhost:4000/api/recipes
 
 ###
 GET http://localhost:4000/api/{{userId}}/recipes
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 // ! POSTING ALL THE RECIPE INGREDIENTS TO INVENTORY
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemStrawberry}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -137,7 +129,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemBanana}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -146,7 +138,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemSatsuma}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -155,7 +147,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemAppleJuice}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -164,9 +156,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemRedGrape}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
   "expiryDate": "06-06-2025"
 }
+
+###
+
+@token=
+DELETE  http://localhost:4000/api/exercise/{{id}}/comment/60a5ce0bfbfccb854fecfece
+Authorization: Bearer {{token}}
+content-type: application/json

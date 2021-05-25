@@ -3,6 +3,7 @@ import express from 'express'
 import itemController from '../controllers/item.js'
 import inventoryItemController from '../controllers/inventoryItem.js'
 import recipeController from '../controllers/recipe.js'
+import sharingMapController from '../controllers/sharingMap.js'
 import userController from '../controllers/user.js'
 
 import secureRoute from '../middleware/secureRoute.js'
@@ -38,6 +39,10 @@ router.route('/:userId/items/:inventoryItemId')
   .get(secureRoute,inventoryItemController.show)
   .delete(secureRoute, inventoryItemController.remove)
   .put(secureRoute, inventoryItemController.update)
+
+// ! sharing map
+router.route('/inventoryitemsmap')
+  .get(secureRoute, sharingMapController.index)
 
 // ! user routes
 router.route('/register')
