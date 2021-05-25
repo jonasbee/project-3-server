@@ -12,7 +12,8 @@ const router = express.Router()
 // ! stock items
 router.route('/items')
   .get(itemController.index)
-
+router.route('/items/search')
+  .get(itemController.search)
 router.route('/items/:itemId')
   .get(itemController.show)
 
@@ -42,5 +43,3 @@ router.route('/login')
   .post(userController.login)
 
 export default router
-
-// .post(secureRoute, itemController.create)

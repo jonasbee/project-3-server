@@ -1,5 +1,5 @@
 import User from '../models/user.js'
-
+import { NotValid } from '../lib/errors.js'
 import jwt from 'jsonwebtoken'
 import { secret } from '../config/environment.js'
 
@@ -18,11 +18,11 @@ async function login(req,res,next) {
     
  
     if (!user) {
-      console.log('there is a problem loggin in/user details or user does not exict')
+      throw new NotValid('There was a problem logging in.')
     }
     const isValidPw = user.validatePassword(req.body.password)
     if (!isValidPw) {
-      console.log('Not valid password.')
+      throw new NotValid('There was a problem logging in.')
     }
 
     const token = jwt.sign(

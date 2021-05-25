@@ -1,6 +1,7 @@
 import InventoryItem from '../models/inventoryItem.js'
 // import { NotFound } from '../middleware/errorHandler.js'
 import Item from '../models/item.js'
+import { NotFound } from '../lib/errors.js'
 
 async function index(req, res, next) {
   try {
@@ -22,7 +23,7 @@ async function show(req, res, next) {
     const inventoryItem = await InventoryItem.findById(id).populate('item')
 
     if (!inventoryItem) {
-      console.log('Error, no item found') 
+      throw new NotFound('No item found.')
     }
 
     res.status(200).json(inventoryItem)
@@ -52,7 +53,7 @@ async function remove(req, res, next) {
     const inventoryItem = await InventoryItem.findById(req.params.inventoryItemId)
     
     if (!inventoryItem) {
-      console.log('no food found')
+      throw new NotFound('No item found.')
     }
 
     if (!currentUserId.equals(inventoryItem.user)) {
@@ -76,7 +77,7 @@ async function update(req, res, next) {
     const inventoryItem = await InventoryItem.findById(req.params.inventoryItemId)
     // ? Check whether the inventoryItem exists
     if (!inventoryItem) {
-      console.log('Inventory item not found')
+      throw new NotFound('No item found.')
     }
     // ? Compare the userId of the user trying to update the inventory item
     // ? with the userId on the inventory item itself. 

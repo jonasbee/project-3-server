@@ -10,6 +10,7 @@
 
 import InventoryItem from '../models/inventoryItem.js'
 import Recipe from '../models/recipe.js'
+import { NotFound } from '../lib/errors.js'
 
 // import Item from '../models/item.js'
 
@@ -82,7 +83,7 @@ async function show(req, res,next) {
     const recipe = await  Recipe.findById(id)
     
     if (!recipe){
-      console.log('No recipe found')
+      throw new NotFound('No recipe found')
     }
 
     res.status(200).json(recipe)
