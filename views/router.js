@@ -12,7 +12,8 @@ const router = express.Router()
 // ! stock items
 router.route('/items')
   .get(itemController.index)
-
+router.route('/items/search')
+  .get(itemController.search)
 router.route('/items/:itemId')
   .get(itemController.show)
 
@@ -21,6 +22,8 @@ router.route('/:userId/recipes')
   .get(secureRoute, recipeController.checkForRecipe)
 router.route('/recipes')
   .get(recipeController.index)
+router.route('/recipes/:recipeId')
+  .get(recipeController.show)
 
 // ! inventory items
 router.route('/:userId/items/:itemId')
@@ -40,5 +43,3 @@ router.route('/login')
   .post(userController.login)
 
 export default router
-
-// .post(secureRoute, itemController.create)
