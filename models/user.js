@@ -37,18 +37,18 @@ userSchema.methods.validatePassword = function validatePassword(password) {
   return bcrypt.compareSync(password, this.password)
 }
 
-userSchema
-  .virtual('passwordConfirmation')
-  .set(function setPasswordConfirmation(passwordConfirmation) {
-    this._passwordConfirmation = passwordConfirmation
-  })
-userSchema
-  .pre('validate', function checkPassword(next) {
-    if (this.isModified('password') && (this.password !== this._passwordConfirmation)) {
-      this.invalidate('passwordConfirmation', 'should match password')
-    }
-    next()
-  })
+// userSchema
+//   .virtual('passwordConfirmation')
+//   .set(function setPasswordConfirmation(passwordConfirmation) {
+//     this._passwordConfirmation = passwordConfirmation
+//   })
+// userSchema
+//   .pre('validate', function checkPassword(next) {
+//     if (this.isModified('password') && (this.password !== this._passwordConfirmation)) {
+//       this.invalidate('passwordConfirmation', 'should match password')
+//     }
+//     next()
+//   })
 
 userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true, addressDetails: true } }))
 userSchema.plugin(uniqueValidator)

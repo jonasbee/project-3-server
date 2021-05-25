@@ -1,7 +1,8 @@
 
-@itemId = 60abab29248393b5b9dfea37
-@itemId1 = 60abab29248393b5b9dfea38
-@userId = 60abab29248393b5b9dfea33
+@itemId = 60acd24bb88a524f5e0bd5e0
+@itemId1 = 60acd24bb88a524f5e0bd5e0
+@userId = 60acd712b9409f51d8e677a4
+@inventoryItemId = 60acd77eb9409f51d8e677a8
 ###
 
 GET http://localhost:4000/api/items/
@@ -22,7 +23,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemId1}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
 
 {
   "quantity": "1",
@@ -30,9 +31,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 }
 
 ###
-GET http://localhost:4000/api/{{userId}}/items/60ababe56cbe33b5d1891381
+GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
 
 ###
 GET http://localhost:4000/api/{{userId}}/items
@@ -40,8 +41,8 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWIyOTI0ODM5M2I1YjlkZmVhMzMiLCJpYXQiOjE2MjE4NjMzMDEsImV4cCI6MTYyMjEyMjUwMX0.KHGBqcOBV_xXjEPBLJJa2kCT0qX8mBUicgB_KHHsoJ0
 ###
 
-DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryId}}
-Authorization: Bearer 
+DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
 
 ###
 
@@ -68,7 +69,7 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "jonas@jonas.com",
-  "password": "jonas"
+  "email": "abubakar1@email.com",
+  "password": "pass"
 }
 

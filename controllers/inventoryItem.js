@@ -56,7 +56,7 @@ async function remove(req, res, next) {
       console.log('no food found')
     }
 
-    if (!currentUserId.euquals(inventoryItem.user)) {
+    if (!currentUserId.equals(inventoryItem.user)) {
       return res.status(401).json({ message: 'Unauthorized, you must be author of plant to delete it' })
     }
 
