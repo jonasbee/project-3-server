@@ -19,14 +19,17 @@ async function checkForRecipe(req, res, next) {
 
     // ? get all recipes
     const recipeList = await Recipe.find()
+    // ? either found recipe or false
     let foundRecipe
+    // ? always the current recipe looked at
     let recipe
 
+    // ! recode the logic with array.filter()
     for (let index = 0; index < recipeList.length; index++) {
       recipe = recipeList[index]
-      for (let index = 0; index < recipe.ingredients.listOfRecipeItems.length; index++) {
+      for (let index = 0; index < recipe.ingredients.length; index++) {
         if (
-          inventoryItemList.find(inventoryItem => inventoryItem.name === recipe.ingredients.listOfRecipeItems[index].name) === undefined
+          (inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name)) === undefined
         ) {
           foundRecipe = false
           return
@@ -46,6 +49,13 @@ async function checkForRecipe(req, res, next) {
   }
 }
 
+
+
+
+
 export default {
   checkForRecipe,
 }
+
+
+

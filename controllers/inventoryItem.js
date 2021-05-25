@@ -16,6 +16,7 @@ async function index(req, res, next) {
   }
 }
 
+
 async function show(req, res, next) {
   try {
     const id = req.params.inventoryItemId
@@ -52,7 +53,7 @@ async function remove(req, res, next) {
     const inventoryItem = await InventoryItem.findById(req.params.inventoryItemId)
     
     if (!inventoryItem) {
-      console.log('no plant found')
+      console.log('no food found')
     }
 
     if (!currentUserId.euquals(inventoryItem.user)) {
@@ -67,6 +68,11 @@ async function remove(req, res, next) {
     next(error)
   }
 }
+
+
+
+
+
 
 export default {
   index,
