@@ -50,7 +50,7 @@ userSchema
     next()
   })
 
-userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true, addressDetails: true } }))
+userSchema.plugin(mongooseHidden({ defaultHidden: { password: true, email: true, _id: true } }))
 userSchema.plugin(uniqueValidator)
 
 
