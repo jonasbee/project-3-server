@@ -16,7 +16,6 @@ async function index(req, res, next) {
   }
 }
 
-
 async function show(req, res, next) {
   try {
     const id = req.params.inventoryItemId
@@ -69,14 +68,37 @@ async function remove(req, res, next) {
   }
 }
 
+async function update(req, res, next) {
+  try {
+    // ? Get the current userId
+    const currentUserId = req.currentUser._id
+    // ? Get the inventoryItem we might want to update
+    const inventoryItem = await InventoryItem.findById(req.params.inventoryItemId)
+    // ? Check whether the inventoryItem exists
+    if (!inventoryItem) {
+      console.log('Inventory item not found')
+    }
+    // ? Compare the userId of the user trying to update the inventory item
+    // ? with the userId on the inventory item itself. 
+    if (!currentUserId.equals(inventoryItem.user)) {
+      return res.status(401).json({ message: 'Unauthorized. You must be the Inventory Item Owner' })
+    }
 
+    // ? Set the updated POST data on the inventory item
+    inventoryItem.set(req.body)
+    // ? Save the updated inventory item
+    inventoryItem.save()
+    res.status(202).json(inventoryItem)
 
-
-
+  } catch (e) {
+    next(e)
+  }
+}
 
 export default {
   index,
   show,
   create,
   remove,
+  update,
 }

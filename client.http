@@ -2,7 +2,7 @@
 @itemId = 60acd24bb88a524f5e0bd5e0
 @itemId1 = 60acd24bb88a524f5e0bd5e0
 @userId = 60acd712b9409f51d8e677a4
-@inventoryItemId = 60acd77eb9409f51d8e677a8
+@inventoryItemId = 60acdf46d568415eae4ad8a7
 ###
 
 GET http://localhost:4000/api/items/
@@ -46,6 +46,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 
 ###
 
+PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
+
+{
+  "quantity": "100"
+}
+
+###
 POST http://localhost:4000/api/register
 content-type: application/json
 
