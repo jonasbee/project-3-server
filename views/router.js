@@ -2,6 +2,7 @@
 import express from 'express'
 import itemController from '../controllers/item.js'
 import inventoryItemController from '../controllers/inventoryItem.js'
+import recipeController from '../controllers/recipe.js'
 import userController from '../controllers/user.js'
 
 import secureRoute from '../middleware/secureRoute.js'
@@ -14,6 +15,12 @@ router.route('/items')
 
 router.route('/items/:itemId')
   .get(itemController.show)
+
+// ! recipe routes
+router.route('/:userId/recipes')
+  .get(secureRoute, recipeController.checkForRecipe)
+router.route('/recipes')
+  .get(recipeController.index)
 
 // ! inventory items
 router.route('/:userId/items/:itemId')

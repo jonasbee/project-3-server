@@ -3,6 +3,7 @@ export default [
     username: 'dimi',
     email: 'dimi@dimi.com',
     password: 'dimi',
+    passwordConfirmation: 'dimi',
     addressDetails: {
       postalCode: 'SW13D6L',
       city: 'London',
@@ -17,6 +18,7 @@ export default [
     username: 'jonas',
     email: 'jonas@jonas.com',
     password: 'jonas',
+    passwordConfirmation: 'jonas',
     addressDetails: {
       postalCode: '12345',
       city: 'Stuttgart',
@@ -30,6 +32,7 @@ export default [
     username: 'abubakar',
     email: 'abubakar@abubakar.com',
     password: 'abubakar',
+    passwordConfirmation: 'abubakar',
     addressDetails: {
       postalCode: '54321',
       city: 'London',
