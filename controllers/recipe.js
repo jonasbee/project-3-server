@@ -8,8 +8,8 @@
 // return
 // }
 
-import InventoryItem from '../models/inventoryItem'
-import Recipe from '../models/recipe'
+import InventoryItem from '../models/inventoryItem.js'
+import Recipe from '../models/recipe.js'
 
 async function checkForRecipe(req, res, next) {
   try {
@@ -51,10 +51,36 @@ async function checkForRecipe(req, res, next) {
 
 
 
+async function index(req,res,next){
+  try {
+    const recipeList = await Recipe.find()
+
+    res.status(200).json(recipeList)
+  } catch (e){
+    next(e)
+  }
+}
+
+async function show(req, res,next) {
+  try   {
+    const id = (req.params.recipeId)
+    const recipe = await  Recipe.findById(id)
+    
+    if (!recipe){
+      console.log('No recipe found')
+    }
+
+    res.status(200).json(recipe)
+  } catch (e) {
+    next(e)
+  }
+}
 
 
 export default {
   checkForRecipe,
+  index,
+  show,
 }
 
 

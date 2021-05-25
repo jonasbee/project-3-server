@@ -21,7 +21,7 @@ const recipeSchema = new mongoose.Schema({
   name: { type: String, required: true },
   timeRequired: { type: String, required: true },
   // timeRequired: cookingTime,
-  serves: { types: String, required: true },
+  serves: { type: String, required: true },
   instructionSteps: { type: [String], required: true },
   difficulty: { type: String, required: true },
   image: { type: String, required: true },

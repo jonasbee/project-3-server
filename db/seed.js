@@ -7,6 +7,9 @@ import itemData from './data/items.js'
 import User from '../models/user.js'
 import usersData from '../db/data/users.js'
 
+import Recipe from '../models/recipe.js'
+import recipeData from '../db/data/recipes.js'
+
 async function seedDatabase() {
   try {
     await connectToDb()
@@ -26,9 +29,15 @@ async function seedDatabase() {
 
     console.log(itemDataWithUsers)
 
+
     // ? Now I can seed my database using mongoose....
     const item = await Item.create(itemDataWithUsers)
     console.log(`🤖 ${item.length} item created!`)
+
+    
+    const recipe = await Recipe.create(recipeData)
+    console.log(`${recipe.length} recipes created!`)
+
 
     await mongoose.connection.close()
     console.log('Disconnected from mongo. All done')

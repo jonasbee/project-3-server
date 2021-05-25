@@ -6,6 +6,10 @@ import userController from '../controllers/user.js'
 
 import secureRoute from '../middleware/secureRoute.js'
 
+import recipeController from '../controllers/recipe.js'
+
+
+
 const router = express.Router()
 
 // ! stock items
@@ -14,6 +18,14 @@ router.route('/items')
 
 router.route('/items/:itemId')
   .get(itemController.show)
+
+// ! recipes
+router.route('/recipes')
+  .get(recipeController.index)
+
+router.route('/recipe/:recipeId')
+  .get(recipeController.show)
+
 
 // ! inventory items
 router.route('/:userId/items/:itemId')

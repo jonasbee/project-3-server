@@ -1,31 +1,22 @@
-<<<<<<< HEAD
-###
-@itemId = 60abbb10c949d3b9d1459257
-@userId = 60abb355266e95b6dbadf1a4
-
-@userId1=60abbb10c949d3b9d1459259
-###
-
-
-
-
-GET http://localhost:4000/api/items/
 
 ###
 @itemId = 60abbb10c949d3b9d1459257
 @itemId1 = 60abbb10c949d3b9d1459258
 @userId = 60abb355266e95b6dbadf1a4
 
-# @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYjM1NTI2NmU5NWI2ZGJhZGYxYTQiLCJpYXQiOjE2MjE4NjYwNDMsImV4cCI6MTYyMjEyNTI0M30.UiMvD6lrgxpmhyRGs4Va4SapaFlXt6h-uoCplkOddzc
-=======
+@recipeId= 60aceffe74b9d8efa2ef46fd
 
-@itemId = 60abab29248393b5b9dfea37
-@itemId1 = 60abab29248393b5b9dfea38
-@userId = 60abab29248393b5b9dfea33
->>>>>>> 1cc3818291d5e54785751f0023b9fd79e3c2de13
-###
+
 
 GET http://localhost:4000/api/items/
+
+
+###
+GET http://localhost:4000/api/recipes/
+
+###
+GET http://localhost:4000/api/recipe/{{recipeId}}
+
 
 ###
 
