@@ -10,18 +10,16 @@ export default [
     ],
     difficulty: 'Easy',
     image: '🥗',
-    ingredients: {
-      listOfRecipeItems: [
-        { name: 'pasta' , number: '200', metric: 'g' },
-        { name: 'egg' , number: '4', metric: '' },
-        { name: 'onion', number: '1', metric: '' },
-        { name: 'spinach' , number: '100', metric: 'g' },
-        { name: 'cherry tomatoes' , number: '250', metric: 'g'  },
-        { name: 'cucumber' , number: '0.5', metric: 'g' },
-        { name: 'tuna', number: '290', metric: 'g' },
-        { name: 'parsley', number: '10', metric: 'g' }
-      ],
-    },
+    ingredients: [
+      { name: 'pasta', number: '200', metric: 'g' },
+      { name: 'egg', number: '4', metric: '' },
+      { name: 'onion', number: '1', metric: '' },
+      { name: 'spinach', number: '100', metric: 'g' },
+      { name: 'cherry tomatoes', number: '250', metric: 'g' },
+      { name: 'cucumber', number: '0.5', metric: 'g' },
+      { name: 'tuna', number: '290', metric: 'g' },
+      { name: 'parsley', number: '10', metric: 'g' }
+    ],
     preference: 'pescatarian',
   },
   {
@@ -36,16 +34,14 @@ export default [
     ],
     difficulty: 'Easy',
     image: '🥞',
-    ingredients: {
-      listOfRecipeItems: [
-        { name: 'milk' , number: '350', metric: 'ml' },
-        { name: 'egg' , number: '2' },
-        { name: 'plain flour', number: '200', metric: 'g' },
-        { name: 'baking powder' , number: '2', metric: 'tsp' },
-        { name: 'sugar' , number: '1', metric: 'tsp'  },
-        { name: 'vegetable oil' },
-      ],
-    },
+    ingredients: [
+      { name: 'milk', number: '350', metric: 'ml' },
+      { name: 'egg', number: '2' },
+      { name: 'plain flour', number: '200', metric: 'g' },
+      { name: 'baking powder', number: '2', metric: 'tsp' },
+      { name: 'sugar', number: '1', metric: 'tsp' },
+      { name: 'vegetable oil' },
+    ],
     preference: 'vegetarian',
   },
   {
@@ -62,15 +58,13 @@ export default [
     ],
     difficulty: 'Easy',
     image: '🍓 🍊 🍇 🍌',
-    ingredients: {
-      listOfRecipeItems: [
-        { name: 'strawberry' , number: '5' },
-        { name: 'red grape' , number: '8' },
-        { name: 'satsuma' , number: '2' },
-        { name: 'banana' , number: '2' },
-        { name: 'apple juice', number: '30', metric: 'ml' },
-      ],
-    },
+    ingredients: [
+      { name: 'strawberry', number: '5' },
+      { name: 'red grape', number: '8' },
+      { name: 'satsuma', number: '2' },
+      { name: 'banana', number: '2' },
+      { name: 'apple juice', number: '30', metric: 'ml' }
+    ],
     preference: 'vegetarian',
   }
 ]

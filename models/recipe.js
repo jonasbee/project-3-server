@@ -13,18 +13,19 @@ const recipeItem = new mongoose.Schema({
   metric: { type: String, required: false },
 })
 
-const ingredients = new mongoose.Schema({
-  listOfRecipeItems: [recipeItem],
-})
+// const ingredients = new mongoose.Schema({
+//   listOfRecipeItems: [recipeItem],
+// })
 
 const recipeSchema = new mongoose.Schema({
   name: { type: String, required: true },
   timeRequired: { type: String, required: true },
   // timeRequired: cookingTime,
+  serves: { types: String, required: true },
   instructionSteps: { type: [String], required: true },
   difficulty: { type: String, required: true },
   image: { type: String, required: true },
-  ingredients: ingredients,
+  ingredients: [recipeItem],
   preference: { type: String, required: false },
 })
 

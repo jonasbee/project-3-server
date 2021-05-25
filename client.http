@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ###
 @itemId = 60abbb10c949d3b9d1459257
 @userId = 60abb355266e95b6dbadf1a4
@@ -16,6 +17,16 @@ GET http://localhost:4000/api/items/
 @userId = 60abb355266e95b6dbadf1a4
 
 # @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYjM1NTI2NmU5NWI2ZGJhZGYxYTQiLCJpYXQiOjE2MjE4NjYwNDMsImV4cCI6MTYyMjEyNTI0M30.UiMvD6lrgxpmhyRGs4Va4SapaFlXt6h-uoCplkOddzc
+=======
+
+@itemId = 60abab29248393b5b9dfea37
+@itemId1 = 60abab29248393b5b9dfea38
+@userId = 60abab29248393b5b9dfea33
+>>>>>>> 1cc3818291d5e54785751f0023b9fd79e3c2de13
+###
+
+GET http://localhost:4000/api/items/
+
 ###
 
 GET http://localhost:4000/api/items/{{itemId}}
@@ -48,7 +59,15 @@ GET http://localhost:4000/api/{{userId1}}/items
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYmIxMGM5NDlkM2I5ZDE0NTkyNTMiLCJpYXQiOjE2MjE4Njc1OTEsImV4cCI6MTYyMjEyNjc5MX0.NO24ON6u-xihZsKxgSO-GVBW5jOjuwWv3ZvFKfzoOU8
 
+<<<<<<< HEAD
 ###
+=======
+DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryId}}
+Authorization: Bearer 
+
+###
+
+>>>>>>> 1cc3818291d5e54785751f0023b9fd79e3c2de13
 POST http://localhost:4000/api/register
 content-type: application/json
 
@@ -66,7 +85,7 @@ content-type: application/json
   }
 }
 
-#####
+###
 
 POST http://localhost:4000/api/login
 content-type: application/json
