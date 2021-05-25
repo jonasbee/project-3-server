@@ -39,18 +39,21 @@ async function checkForRecipe(req, res, next) {
 
     // ? found recipe true or false
     let foundPotentialRecipe
+    // ? filter through the list of recipes
     const listOfFoundRecipes = recipeList.filter(recipe => {
-
-      // * loop through all recipe ingredients
+      // * for every recipe, loop through all recipe ingredients
       for (let index = 0; index < recipe.ingredients.length; index++) {
         // * check if current recipe ingredient is in inventoryItemList
         // * as soon as inventoryItem is equal to recipe ingredient
         // * it returns that item (so not undefined)
+        console.log(index)
+        console.log(inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name))
         if (
           (inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name)) === undefined
         ) {
           // gets executed if find() returns undefined
           foundPotentialRecipe = false
+          break
         } else {
           // gets executed if find() returns item
           foundPotentialRecipe = true
