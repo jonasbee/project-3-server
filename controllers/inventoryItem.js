@@ -1,5 +1,4 @@
 import InventoryItem from '../models/inventoryItem.js'
-// import { NotFound } from '../middleware/errorHandler.js'
 import Item from '../models/item.js'
 import { NotFound } from '../lib/errors.js'
 

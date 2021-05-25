@@ -1,87 +1,48 @@
-
-@itemId = 60acf2d23cc142cfc492d433
-@itemId1 = 60acf2d23cc142cfc492d434
+// abubakar1
 @userId = 60ad44547f9154f001bee6c5
+// dimi
+@user1Id = 60acf2d23cc142cfc492d42d
 
+// tomato
+@itemId = 60acf2d23cc142cfc492d433
+// pasta
+@itemId1 = 60acf2d23cc142cfc492d434
 @itemStrawberry = 60acf2d23cc142cfc492d438
 @itemRedGrape = 60acf2d23cc142cfc492d439
 @itemSatsuma = 60acf2d23cc142cfc492d43a
-@itemBanana = 60ad22aa786db3ffce1509da
-@itemAppleJuice = 60ad22aa786db3ffce1509de
+@itemBanana = 60acf2d23cc142cfc492d43b
+@itemAppleJuice = 60acf2d23cc142cfc492d43c
 
-@inventoryItemId = 60ad45e37f9154f001bee6ce
+@inventoryItemId = 60ad69e9d4adcdf6fc670d32
+// Niçoise Pasta Salad
 @recipeId = 60acf2d23cc142cfc492d43d
 
-###
+// abubakar1 token
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
+// dimi token
+@token1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmQiLCJpYXQiOjE2MjE5NzY2MTYsImV4cCI6MTYyMjIzNTgxNn0.P6ECAazbkvMUQS9Ohs-jyNWclNDokSxcu_NMBO05Rvg
 
+///////////////////////// ITEM REQUESTS /////////////////////////
+###
+// getting item ids
 GET http://localhost:4000/api/items/
-
-
-###
-GET http://localhost:4000/api/recipes/
-
-###
-GET http://localhost:4000/api/recipes/{{recipeId}}
-
-
 ###
 GET http://localhost:4000/api/items/{{itemId}}
-
 ###
 GET http://localhost:4000/api/items/search?name=strawberry
 
+
+///////////////////////// USER REQUESTS /////////////////////////
 ###
-POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
+// dimi as "user1Id" and "token1"
+POST http://localhost:4000/api/login
+content-type: application/json
 
 {
-  "quantity": "2",
-  "expiryDate": "06-06-2021"
+  "email": "dimi@dimi.com",
+  "password": "dimi"
 }
 ###
-POST http://localhost:4000/api/{{userId}}/items/{{itemId1}}
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-
-{
-  "quantity": "2",
-  "expiryDate": "06-06-2021"
-}
-
-###
-GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-
-###
-GET http://localhost:4000/api/{{userId}}/items
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-
-####
-DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-###
-
-DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-
-###
-
-PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-
-{
-  "quantity": "100",
-  "isShared": "true"
-}
-
-###
-GET http://localhost:4000/api/inventoryitemsmap
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
-###
-
 POST http://localhost:4000/api/register
 content-type: application/json
 
@@ -99,8 +60,8 @@ content-type: application/json
       "country": "England"
   }
 }
-
 ###
+// abubakar1 as "userId" and token
 POST http://localhost:4000/api/login
 content-type: application/json
 
@@ -109,18 +70,40 @@ content-type: application/json
   "password": "pass"
 }
 
+///////////////////////// INVENTORY REQUESTS /////////////////////////
 ###
-GET http://localhost:4000/api/recipes
-
+GET http://localhost:4000/api/{{userId}}/items
+Authorization: Bearer {{token}}
 ###
-GET http://localhost:4000/api/{{userId}}/recipes
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
+POST http://localhost:4000/api/{{userId}}/items/{{itemId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
 
-// ! POSTING ALL THE RECIPE INGREDIENTS TO INVENTORY
+{
+  "quantity": "2",
+  "expiryDate": "06-06-2021"
+}
+###
+GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer {{token}}
+###
+PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "quantity": "100",
+  "isShared": "true"
+}
+###
+DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer {{token}}
+
+// ! POSTING all inventory item for recipe
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemStrawberry}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -128,8 +111,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkN
 }
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemBanana}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -137,8 +120,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkN
 }
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemSatsuma}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -146,8 +129,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkN
 }
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemAppleJuice}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
@@ -155,17 +138,56 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkN
 }
 ###
 POST http://localhost:4000/api/{{userId}}/items/{{itemRedGrape}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
 
 {
   "quantity": "1",
   "expiryDate": "06-06-2025"
 }
 
+///////////////////////// RECIPE REQUESTS /////////////////////////
+###
+GET http://localhost:4000/api/recipes
+###
+GET http://localhost:4000/api/recipes/{{recipeId}}
+###
+// see if there are recipes available for the user's inventory
+GET http://localhost:4000/api/{{userId}}/recipes
+Authorization: Bearer {{token}}
 ###
 
-@token=
-DELETE  http://localhost:4000/api/exercise/{{id}}/comment/60a5ce0bfbfccb854fecfece
+///////////////////////// SHARED MAP REQUESTS /////////////////////////
+###
+GET http://localhost:4000/api/inventoryitemsmap
 Authorization: Bearer {{token}}
-content-type: application/json
+// create inventorItems for user1
+###
+POST  http://localhost:4000/api/{{user1Id}}/items/{{itemStrawberry}}
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "quantity": "100",
+  "isShared": "true",
+  "expiryDate": "06-06-2025"
+}
+###
+POST  http://localhost:4000/api/{{user1Id}}/items/{{itemBanana}}
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "quantity": "100",
+  "isShared": "true",
+  "expiryDate": "06-06-2025"
+}
+###
+PUT http://localhost:4000/api/{{user1Id}}/items/{{inventoryItemId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "quantity": "100",
+  "isShared": "true"
+}

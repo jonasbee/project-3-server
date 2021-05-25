@@ -1,13 +1,3 @@
-// ? get all recipes
-// ? for every recipe, 
-// ? check if you can find
-// ? item of ingredients.listOfRecipeItem
-// ? in the list of inventoryItem
-
-// ? if (! listOfInventoryItems.contains(ingredients.listOfRecipeItem[index]) ) {
-// return
-// }
-
 import InventoryItem from '../models/inventoryItem.js'
 import Recipe from '../models/recipe.js'
 import { NotFound } from '../lib/errors.js'
@@ -97,26 +87,4 @@ export default {
   index,
   show,
   checkForRecipe,
-  index,
-  show,
 }
-
-
-// ! not needed (alternative solution)
-    // // ? always the current recipe looked at
-    // let recipe
-    // // ! recode the logic with array.filter()
-    // for (let index = 0; index < recipeList.length; index++) {
-    //   recipe = recipeList[index]
-    //   for (let index = 0; index < recipe.ingredients.length; index++) {
-    //     if (
-    //       (inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name)) === undefined
-    //     ) {
-    //       foundPotentialRecipe = false
-    //       return
-    //     } else {
-    //       foundPotentialRecipe = recipe
-    //     }
-    //   }
-    // }
-    // ! -----

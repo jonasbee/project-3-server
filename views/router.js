@@ -8,10 +8,6 @@ import userController from '../controllers/user.js'
 
 import secureRoute from '../middleware/secureRoute.js'
 
-
-
-
-
 const router = express.Router()
 
 // ! stock items
