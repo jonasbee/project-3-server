@@ -9,6 +9,7 @@
 @itemBanana = 60acf2d23cc142cfc492d43b
 @itemAppleJuice = 60acf2d23cc142cfc492d43c
 
+@inventoryItemId = 60acf40b18f778cfe144c670
 ###
 
 GET http://localhost:4000/api/items/
@@ -37,7 +38,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 }
 
 ###
-GET http://localhost:4000/api/{{userId}}/items/60acf40b18f778cfe144c670
+GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM
 
@@ -49,9 +50,21 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZ
 
 DELETE http://localhost:4000/api/{{userId}}/items/{{itemStrawberry}}
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmYiLCJpYXQiOjE2MjE5NDcyNjcsImV4cCI6MTYyMjIwNjQ2N30.s6n9qmNSdDNAjF47eWcK4ORUu78udTcCPYGU1w60qgM 
+###
+DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
 
 ###
 
+PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZDcxMmI5NDA5ZjUxZDhlNjc3YTQiLCJpYXQiOjE2MjE5NDAwMTksImV4cCI6MTYyMjE5OTIxOX0.IsdcLNFYOHQsXVqrrrTPyQbsltZiqdb3S-AJURXWMBk
+
+{
+  "quantity": "100"
+}
+
+###
 POST http://localhost:4000/api/register
 content-type: application/json
 
@@ -74,8 +87,8 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "jonas@jonas.com",
-  "password": "jonas"
+  "email": "abubakar1@email.com",
+  "password": "pass"
 }
 
 ###

@@ -30,6 +30,7 @@ router.route('/:userId/items')
 router.route('/:userId/items/:inventoryItemId')
   .get(secureRoute,inventoryItemController.show)
   .delete(secureRoute, inventoryItemController.remove)
+  .put(secureRoute, inventoryItemController.update)
 
 // ! user routes
 router.route('/register')
