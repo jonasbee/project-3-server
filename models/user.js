@@ -5,20 +5,16 @@ import mongooseHidden from 'mongoose-hidden'
 
 import bcrypt from 'bcrypt'
 
-const addressSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true, hide: true },
   postalCode: { type: String, required: true },
   city: { type: String, required: true },
   street: { type: String, required: true },
   streetNo: { type: String, required: true },
   region: { type: String, required: true },
   country: { type: String, required: true },
-})
-
-const userSchema = new mongoose.Schema({
-  username: { type: String, required: true, unique: true },
-  email: { type: String, required: true, unique: true },
-  password: { type: String, required: true, hide: true },
-  addressDetails: addressSchema,
   preference: { type: String, required: false },
 })
 

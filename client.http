@@ -39,8 +39,8 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "dimi@dimi.com",
-  "password": "dimi"
+  "email": "dimi21@email.com",
+  "password": "pass"
 }
 ###
 POST http://localhost:4000/api/register
@@ -51,14 +51,12 @@ content-type: application/json
   "password": "pass",
   "passwordConfirmation": "pass",
   "email": "abubakar1@email.com",
-  "addressDetails": {
-      "postalCode": "54321",
-      "city": "London",
-      "street": "Downing Street",  
-      "streetNo": "10",
-      "region": "United Kingdom",
-      "country": "England"
-  }
+  "postalCode": "54321",
+  "city": "London",
+  "street": "Downing Street",  
+  "streetNo": "10",
+  "region": "United Kingdom",
+  "country": "England"
 }
 ###
 // abubakar1 as "userId" and token
