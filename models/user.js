@@ -14,11 +14,17 @@ const addressSchema = new mongoose.Schema({
   country: { type: String, required: true },
 })
 
+const coordinateSchema = new mongoose.Schema({
+  longitude: { type: String, required: false },
+  latitude: { type: String, required: false },
+})
+
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true, hide: true },
   addressDetails: addressSchema,
+  coordinates: { type: coordinateSchema, required: false },
   preference: { type: String, required: false },
 })
 

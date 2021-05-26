@@ -47,17 +47,21 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "abubakar1",
+  "username": "abubakar4",
   "password": "pass",
   "passwordConfirmation": "pass",
-  "email": "abubakar1@email.com",
+  "email": "abubakar4@email.com",
   "addressDetails": {
-      "postalCode": "54321",
+      "postalCode": "E1 7PT",
       "city": "London",
-      "street": "Downing Street",  
-      "streetNo": "10",
-      "region": "United Kingdom",
+      "street": "Whitechapel High Street",  
+      "streetNo": "114",
+      "region": "Spitalfields",
       "country": "England"
+  },
+  "coordinates": {
+    "longitude": "",
+    "latitude": ""
   }
 }
 ###
@@ -66,7 +70,7 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "abubakar1@email.com",
+  "email": "abubakar2@email.com",
   "password": "pass"
 }
 
@@ -191,3 +195,13 @@ Content-Type: application/json
   "quantity": "100",
   "isShared": "true"
 }
+
+///////////////////////// GEOCODE REQUESTS /////////////////////////
+
+###
+// address in Germany
+GET https://nominatim.openstreetmap.org/search?q=100,+Johannesstraße,+Stuttgart,+Baden-Württemberg,+70176,+Germany&format=json&addressdetails=1&limit=1&polygon_svg=1
+
+###
+// address in UK
+GET https://nominatim.openstreetmap.org/search?q=114,+Whitechapel+High+St,+London,+E1+7QA,+United+Kingdom&format=json&addressdetails=1&limit=1&polygon_svg=1
