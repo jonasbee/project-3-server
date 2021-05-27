@@ -5,20 +5,6 @@ import mongooseHidden from 'mongoose-hidden'
 
 import bcrypt from 'bcrypt'
 
-// const addressSchema = new mongoose.Schema({
-//   postalCode: { type: String, required: true },
-//   city: { type: String, required: true },
-//   street: { type: String, required: true },
-//   streetNo: { type: String, required: true },
-//   region: { type: String, required: true },
-//   country: { type: String, required: true },
-// })
-
-// const coordinateSchema = new mongoose.Schema({
-//   longitude: { type: String, required: false },
-//   latitude: { type: String, required: false },
-// })
-
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },

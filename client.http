@@ -39,8 +39,8 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "dimi@dimi.com",
-  "password": "dimi"
+  "email": "dimi21@email.com",
+  "password": "pass"
 }
 ###
 POST http://localhost:4000/api/register
@@ -51,18 +51,12 @@ content-type: application/json
   "password": "pass",
   "passwordConfirmation": "pass",
   "email": "abubakar4@email.com",
-  "addressDetails": {
-      "postalCode": "E1 7PT",
-      "city": "London",
-      "street": "Whitechapel High Street",  
-      "streetNo": "114",
-      "region": "Spitalfields",
-      "country": "England"
-  },
-  "coordinates": {
-    "longitude": "",
-    "latitude": ""
-  }
+  "postalCode": "E1 7PT",
+  "city": "London",
+  "street": "Whitechapel High Street",  
+  "streetNo": "114",
+  "region": "Spitalfields",
+  "country": "England"
 }
 ###
 // abubakar1 as "userId" and token
