@@ -13,12 +13,12 @@
 @itemBanana = 60acf2d23cc142cfc492d43b
 @itemAppleJuice = 60acf2d23cc142cfc492d43c
 
-@inventoryItemId = 60ad69e9d4adcdf6fc670d32
+@inventoryItemId = 60ad6cfc96bf5001493223ab
 // Niçoise Pasta Salad
 @recipeId = 60acf2d23cc142cfc492d43d
 
 // abubakar1 token
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjE5NjgwMzYsImV4cCI6MTYyMjIyNzIzNn0.AMsd6-mo5kUAE8TIxftFANcoTxNdBrFf2GvuU8rD2gM
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjIxMjMzNTcsImV4cCI6MTYyMjM4MjU1N30.lhEuEtfQGwi8K8zWBQeIWR87f7Ov3n7X6dzaoA7Z7cU
 // dimi token
 @token1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmQiLCJpYXQiOjE2MjE5NzY2MTYsImV4cCI6MTYyMjIzNTgxNn0.P6ECAazbkvMUQS9Ohs-jyNWclNDokSxcu_NMBO05Rvg
 
@@ -47,16 +47,17 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "abubakar4",
+  "username": "abubakar5",
   "password": "pass",
   "passwordConfirmation": "pass",
-  "email": "abubakar4@email.com",
+  "email": "abubakar5@email.com",
   "postalCode": "E1 7PT",
   "city": "London",
   "street": "Whitechapel High Street",  
   "streetNo": "114",
   "region": "Spitalfields",
-  "country": "England"
+  "country": "England",
+  "coordinates": []
 }
 ###
 // abubakar1 as "userId" and token
@@ -64,7 +65,7 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "abubakar2@email.com",
+  "email": "abubakar1@email.com",
   "password": "pass"
 }
 
@@ -85,13 +86,13 @@ Content-Type: application/json
 GET http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
 Authorization: Bearer {{token}}
 ###
-PUT http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
-Authorization: Bearer {{token}}
+PUT http://localhost:4000/api/{{user1Id}}/items/{{inventoryItemId}}
+Authorization: Bearer {{token1}}
 Content-Type: application/json
 
 {
   "quantity": "100",
-  "isShared": "true"
+  "isShared": "false"
 }
 ###
 DELETE http://localhost:4000/api/{{userId}}/items/{{inventoryItemId}}
