@@ -15,6 +15,8 @@ const userSchema = new mongoose.Schema({
   streetNo: { type: String, required: true },
   region: { type: String, required: true },
   country: { type: String, required: true },
+  // ? array order: lat, long
+  coordinates: { type: [String], required: false },
   preference: { type: String, required: false },
 })
 
