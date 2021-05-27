@@ -10,17 +10,21 @@ async function register(req, res, next) {
     // ? get coordinates of entered address
     // ? via API
     // ? add coordinates to body before creating user
-    const address = req.body.addressDetails
-    console.log('address:', address)
-    const { data } = await getCoordinates(address)
+
+    // ! not need due to change of model
+    // const address = req.body.addressDetails
+    // console.log('address:', address)
+
+    const { data } = await getCoordinates(req.body.postalCode, req.body.city, req.body.street, req.body.streetNo, req.body.region, req.body.country)
+
     console.log('geocodeArray:', data)
     const latitude = data[0].lat
     console.log('latitude:', latitude)
     const longitude = data[0].lon
     console.log('longitude:', longitude)
     console.log(req.body)
-    req.body.coordinates.latitude = latitude
-    req.body.coordinates.longitude = longitude
+    req.body.coordinates[0] = latitude
+    req.body.coordinates[1] = longitude
 
     const user = await User.create(req.body)
     console.log(req.body)
