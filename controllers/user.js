@@ -10,7 +10,7 @@ async function register(req, res, next) {
     // ? get coordinates of entered address
     // ? via API
     // ? add coordinates to body before creating user
-
+    console.log('within register')
     const { data } = await getCoordinates(
       req.body.postalCode.replace(' ', '+'),
       req.body.city.replace(' ', '+'),
@@ -19,15 +19,17 @@ async function register(req, res, next) {
       req.body.region.replace(' ', '+'),
       req.body.country.replace(' ', '+')
     )
-    // if (data.length === 0) {
-    //   return res.status(401).json({ message: 'Address not found' })
-    // }
-    const { lat, lon } = data[0]
-    req.body.coordinates = [lat, lon]
+    console.log(data)
+    // ! if no data let it try to create user and return Validation error
+    if (data.length !== 0) {
+      const { lat, lon } = data[0]
+      req.body.coordinates = [lat, lon]
+    }
 
     const user = await User.create(req.body)
     res.status(200).json(user)
   } catch (e) {
+    console.log(e)
     next(e)
   }
 }

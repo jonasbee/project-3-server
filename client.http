@@ -57,7 +57,7 @@ content-type: application/json
   "streetNo": "114",
   "region": "Spitalfields",
   "country": "England",
-  "coordinates": []
+  "coordinates": ["51.638355", "-0.227401"]
 }
 ###
 // abubakar1 as "userId" and token

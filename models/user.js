@@ -16,8 +16,21 @@ const userSchema = new mongoose.Schema({
   region: { type: String, required: true },
   country: { type: String, required: true },
   // ? array order: lat, long
-  coordinates: { type: [String], required: false },
-  preference: { type: String, required: false },
+  coordinates: {
+    type: [String], 
+    required: true,
+    validate: [
+      { validator: (types) => (types.length === 2) }
+    ],
+  },
+  preference: { 
+    type: String, 
+    required: false, 
+    enum: {
+      values: ['vegetarian', 'vegan', 'pescetarian'],
+      message: '{VALUE} is not supported',
+    },
+  },
 })
 
 

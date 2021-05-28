@@ -3,8 +3,20 @@ import mongoose from 'mongoose'
 
 const InventoryItemSchema = new mongoose.Schema({
   item: { type: mongoose.Schema.ObjectId, ref: 'Item', required: true },
-  quantity: { type: Number, required: true },
-  expiryDate: { type: Date, required: true },
+  quantity: { 
+    type: Number, 
+    required: true,
+    validate: [
+      { validator: (type) => (type > 0) }
+    ], 
+  },
+  expiryDate: { 
+    type: Date, 
+    required: true,
+    validate: [
+      { validator: (type) => (Date.parse(type) > Date.now()) }
+    ], 
+  },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   // ? This will indicate whether an inventory item has been shared
   // ? Default to false for all items in the user's inventory
