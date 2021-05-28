@@ -24,7 +24,7 @@ export default function errorHandler(err, req, res, next) {
     })
   }
 
-  res.sendstatus(500)
+  res.sendStatus(500)
   next(err)
 }
 
