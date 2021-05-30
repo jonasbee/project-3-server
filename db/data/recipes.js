@@ -9,7 +9,7 @@ export default [
       'Whisk the oil with the vinegar in a large bowl; season. Stir through the onion, spinach, tomatoes, cucumber and olives. Add the pasta and toss everything together to coat well in the dressing. Fold in the tuna and most of the parsley, then transfer to plates or a serving platter. Top with the eggs, remaining parsley and extra black pepper to serve.'
     ],
     difficulty: 'Easy',
-    image: '🥗',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394713/nicoise-pasta-salad_bxsf99.jpg',
     ingredients: [
       { name: 'pasta', number: '200', metric: 'g' },
       { name: 'egg', number: '4', metric: '' },
@@ -33,7 +33,7 @@ export default [
       'Serve with a drizzle of maple syrup, if you like.'
     ],
     difficulty: 'Easy',
-    image: '🥞',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394718/american-pancakes_ensaqc.jpg',
     ingredients: [
       { name: 'milk', number: '350', metric: 'ml' },
       { name: 'egg', number: '2' },
@@ -57,7 +57,7 @@ export default [
       'Serve chilled, or put it into a pot and keep as a lunchbox treat.'
     ],
     difficulty: 'Easy',
-    image: '🍓 🍊 🍇 🍌',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394722/fruit-salad_l3whel.jpg',
     ingredients: [
       { name: 'strawberry', number: '5' },
       { name: 'red grape', number: '8' },
