@@ -1,7 +1,7 @@
 // abubakar1
-@userId = 60ad44547f9154f001bee6c5
+@userId = 60b123c79d442037bdb8fd9c
 // dimi
-@user1Id = 60acf2d23cc142cfc492d42d
+@user1Id = 60b123c79d442037bdb8fd9c
 
 // tomato
 @itemId = 60acf2d23cc142cfc492d433
@@ -13,14 +13,14 @@
 @itemBanana = 60acf2d23cc142cfc492d43b
 @itemAppleJuice = 60acf2d23cc142cfc492d43c
 
-@inventoryItemId = 60ad6cfc96bf5001493223ab
+@inventoryItemId = 60b12e54cfffcb3c22df5abf
 // Niçoise Pasta Salad
 @recipeId = 60acf2d23cc142cfc492d43d
 
 // abubakar1 token
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjIzODQ2NDUsImV4cCI6MTYyMjY0Mzg0NX0.Gt6QnhHW7TYIkFVKSHfkETs_8mbc8ZrxIui6y8OLhNY
 // dimi token
-@token1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjZjJkMjNjYzE0MmNmYzQ5MmQ0MmQiLCJpYXQiOjE2MjE5NzY2MTYsImV4cCI6MTYyMjIzNTgxNn0.P6ECAazbkvMUQS9Ohs-jyNWclNDokSxcu_NMBO05Rvg
+@token1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGIxMjNjNzlkNDQyMDM3YmRiOGZkOWMiLCJpYXQiOjE2MjIyMjI4NTMsImV4cCI6MTYyMjQ4MjA1M30.od-nKZV82Jkq9EsQ4WtSmMmcQ6Aj0jVRdd_OQbdC9DA
 
 ///////////////////////// ITEM REQUESTS /////////////////////////
 ###
@@ -200,8 +200,7 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "quantity": "100",
-  "isShared": "true"
+  "quantity": "10"
 }
 
 ///////////////////////// GEOCODE REQUESTS /////////////////////////
