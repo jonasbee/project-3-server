@@ -15,7 +15,7 @@ export default [
       { name: 'egg', number: '4', metric: '' },
       { name: 'onion', number: '1', metric: '' },
       { name: 'spinach', number: '100', metric: 'g' },
-      { name: 'cherry tomatoes', number: '250', metric: 'g' },
+      { name: 'cherry tomato', number: '250', metric: 'g' },
       { name: 'cucumber', number: '0.5', metric: 'g' },
       { name: 'tuna', number: '290', metric: 'g' },
       { name: 'parsley', number: '10', metric: 'g' }
@@ -40,7 +40,7 @@ export default [
       { name: 'plain flour', number: '200', metric: 'g' },
       { name: 'baking powder', number: '2', metric: 'tsp' },
       { name: 'sugar', number: '1', metric: 'tsp' },
-      { name: 'vegetable oil' },
+      { name: 'vegetable oil' }
     ],
     preference: 'vegetarian',
   },
@@ -51,9 +51,9 @@ export default [
     instructionSteps: [
       'Wash and drain the strawberries and grapes.',
       'Pull the stalks from the strawberries, before asking an adult to help halve each one using a knife. Pull the grapes off the stalks.',
-      'Peel the satsumas and separate into segments. Peel the bananas and, with some help from an adult, slice them into small pieces.',
+      'Peel the oranges and separate into segments. Peel the bananas and, with some help from an adult, slice them into small pieces.',
       'Place all the fruit in a bowl and mix together. Remember, you can also use peeled and sliced kiwi, chunks of fresh mango or canned pineapple pieces.',
-      'Add the apple juice. Or, you may want to experiment with other types of fruit juice if you\'d prefer.',
+      'Add some orange juice. Or, you may want to experiment with other types of fruit juice if you\'d prefer.',
       'Serve chilled, or put it into a pot and keep as a lunchbox treat.'
     ],
     difficulty: 'Easy',
@@ -61,9 +61,8 @@ export default [
     ingredients: [
       { name: 'strawberry', number: '5' },
       { name: 'red grape', number: '8' },
-      { name: 'satsuma', number: '2' },
-      { name: 'banana', number: '2' },
-      { name: 'apple juice', number: '30', metric: 'ml' }
+      { name: 'orange', number: '2' },
+      { name: 'banana', number: '2' }
     ],
     preference: 'vegetarian',
   }

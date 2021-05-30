@@ -35,8 +35,8 @@ export default [
     category: 'fruit',
   },
   {
-    name: 'satsuma',
-    icon: '🍊',
+    name: 'orange',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385988/orange_maue5i.svg',
     category: 'fruit',
   },
   {
@@ -45,8 +45,73 @@ export default [
     category: 'fruit',
   },
   {
-    name: 'apple juice',
-    icon: '🧃',
-    category: 'juice',
+    name: 'egg',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386034/eggs_mfehfx.svg',
+    category: 'protein',
+  },
+  {
+    name: 'plain flour',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385956/flour-1_adfoo2.svg',
+    category: 'grains',
+  },
+  {
+    name: 'onion',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385987/onion-1_oqywqg.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'cucumber',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386028/cucumber_jtsv2j.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'olive oil',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385986/oil_rwkmza.svg',
+    category: 'fat',
+  },
+  {
+    name: 'vegetable oil',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385986/oil_rwkmza.svg',
+    category: 'fat',
+  },
+  {
+    name: 'mushroom',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385983/mushroom_wh2git.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'tuna',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385956/fish_ipl9wd.svg',
+    category: 'fish',
+  },
+  {
+    name: 'chilli',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386016/chili_owibbm.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'spinach',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622392816/spinach_pr5h0w.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'cherry tomato',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622392933/cherry-tomato_buipg1.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'parsley',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393027/parsley_cgobjk.svg',
+    category: 'vegetable',
+  },
+  {
+    name: 'baking powder',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393122/baking-soda_s4fwhh.svg',
+    category: 'grain',
+  },
+  {
+    name: 'sugar',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393357/sugar-cubes_ztrf7e.svg',
+    category: 'grain',
   }
 ]
