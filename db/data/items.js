@@ -1,37 +1,37 @@
 export default [
   {
     name: 'tomato',
-    icon: '🍅',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386022/tomato_b2bepi.svg',
     category: 'vegetable',
   },
   {
     name: 'pasta',
-    icon: '🍝',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385991/pasta_hduuau.svg',
     category: 'pasta',
   },
   {
     name: 'milk',
-    icon: '🥛',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385981/milk-1_jixqys.svg',
     category: 'dairy',
   },
   {
     name: 'prawns',
-    icon: '🦐',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386009/shrimp_bcamdy.svg',
     category: 'fish',
   },
   {
     name: 'cheese',
-    icon: '🧀',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386006/cheese-1_bev8ho.svg',
     category: 'dairy',
   },
   {
     name: 'strawberry',
-    icon: '🍓',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386015/strawberry_yvfqav.svg',
     category: 'fruit',
   },
   {
     name: 'red grape',
-    icon: '🍇',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385962/grapes_wedmip.svg',
     category: 'fruit',
   },
   {
@@ -41,7 +41,7 @@ export default [
   },
   {
     name: 'banana',
-    icon: '🍌',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385968/banana_mggvt8.svg',
     category: 'fruit',
   },
   {
