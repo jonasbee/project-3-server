@@ -9,13 +9,13 @@ export default [
       'Whisk the oil with the vinegar in a large bowl; season. Stir through the onion, spinach, tomatoes, cucumber and olives. Add the pasta and toss everything together to coat well in the dressing. Fold in the tuna and most of the parsley, then transfer to plates or a serving platter. Top with the eggs, remaining parsley and extra black pepper to serve.'
     ],
     difficulty: 'Easy',
-    image: '🥗',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394713/nicoise-pasta-salad_bxsf99.jpg',
     ingredients: [
       { name: 'pasta', number: '200', metric: 'g' },
       { name: 'egg', number: '4', metric: '' },
       { name: 'onion', number: '1', metric: '' },
       { name: 'spinach', number: '100', metric: 'g' },
-      { name: 'cherry tomatoes', number: '250', metric: 'g' },
+      { name: 'cherry tomato', number: '250', metric: 'g' },
       { name: 'cucumber', number: '0.5', metric: 'g' },
       { name: 'tuna', number: '290', metric: 'g' },
       { name: 'parsley', number: '10', metric: 'g' }
@@ -33,14 +33,14 @@ export default [
       'Serve with a drizzle of maple syrup, if you like.'
     ],
     difficulty: 'Easy',
-    image: '🥞',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394718/american-pancakes_ensaqc.jpg',
     ingredients: [
       { name: 'milk', number: '350', metric: 'ml' },
       { name: 'egg', number: '2' },
       { name: 'plain flour', number: '200', metric: 'g' },
       { name: 'baking powder', number: '2', metric: 'tsp' },
       { name: 'sugar', number: '1', metric: 'tsp' },
-      { name: 'vegetable oil' },
+      { name: 'vegetable oil' }
     ],
     preference: 'vegetarian',
   },
@@ -51,19 +51,18 @@ export default [
     instructionSteps: [
       'Wash and drain the strawberries and grapes.',
       'Pull the stalks from the strawberries, before asking an adult to help halve each one using a knife. Pull the grapes off the stalks.',
-      'Peel the satsumas and separate into segments. Peel the bananas and, with some help from an adult, slice them into small pieces.',
+      'Peel the oranges and separate into segments. Peel the bananas and, with some help from an adult, slice them into small pieces.',
       'Place all the fruit in a bowl and mix together. Remember, you can also use peeled and sliced kiwi, chunks of fresh mango or canned pineapple pieces.',
-      'Add the apple juice. Or, you may want to experiment with other types of fruit juice if you\'d prefer.',
+      'Add some orange juice. Or, you may want to experiment with other types of fruit juice if you\'d prefer.',
       'Serve chilled, or put it into a pot and keep as a lunchbox treat.'
     ],
     difficulty: 'Easy',
-    image: '🍓 🍊 🍇 🍌',
+    image: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622394722/fruit-salad_l3whel.jpg',
     ingredients: [
       { name: 'strawberry', number: '5' },
       { name: 'red grape', number: '8' },
-      { name: 'satsuma', number: '2' },
-      { name: 'banana', number: '2' },
-      { name: 'apple juice', number: '30', metric: 'ml' }
+      { name: 'orange', number: '2' },
+      { name: 'banana', number: '2' }
     ],
     preference: 'vegetarian',
   }
