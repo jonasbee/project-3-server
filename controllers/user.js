@@ -1,5 +1,5 @@
 import User from '../models/user.js'
-import { NotValid } from '../lib/errors.js'
+import { NotValid, NotFound } from '../lib/errors.js'
 import jwt from 'jsonwebtoken'
 import { secret } from '../config/environment.js'
 import { getCoordinates } from '../lib/api.js'
@@ -54,7 +54,7 @@ async function register(req, res, next) {
 //       console.log('Address is incorrect')
 //       throw new NotValid('Address is incorrect')
 //     }
-  
+
 //     console.log('geocodeArray:', data)
 //     const latitude = data[0].lat
 //     console.log('latitude:', latitude)
@@ -105,8 +105,24 @@ async function login(req, res, next) {
   }
 }
 
+async function update(req, res, next) {
+  try {
+    const currentUserId = req.currentUser._id
+    const user = await User.findById(currentUserId)
+    if (!user) {
+      throw new NotFound('No user found.')
+    }
+    user.set(req.body)
+    user.save()
+    res.status(202).json(user)
+
+  } catch (error) {
+    next(error)
+  }
+}
 
 export default {
   register,
   login,
+  update,
 }
