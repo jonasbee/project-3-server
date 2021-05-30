@@ -43,8 +43,9 @@ router.route('/inventoryitemsmap')
 // ! user routes
 router.route('/register')
   .post(userController.register)
-
 router.route('/login')
   .post(userController.login)
+router.route('/:userId/update')
+  .put(secureRoute, userController.update)
 
 export default router

@@ -13,6 +13,8 @@ app.use(express.json())
 
 app.use('/api', router)
 
+app.use('/images', express.static('/db/data'))
+
 app.use(errorHandler)
 
 
