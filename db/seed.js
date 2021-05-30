@@ -26,11 +26,7 @@ async function seedDatabase() {
     const item = await Item.create(itemData)
     console.log(`🤖 ${item.length} recipes created!`)
 
-    // ? seeding the recipes
-    const recipes = await Recipe.create(recipeData)
-    console.log(`🤖 ${recipes.length} item created!`)
-
-    
+    // ? seeding the recipes    
     const recipe = await Recipe.create(recipeData)
     console.log(`${recipe.length} recipes created!`)
 
