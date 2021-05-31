@@ -115,11 +115,6 @@ export default [
     category: 'Grain',
   },
   {
-    name: 'Sugar',
-    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393357/sugar-cubes_ztrf7e.svg',
-    category: 'Grain',
-  },
-  {
     name: 'Oat',
     icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622479030/oat_yby1oo.svg',
     category: 'Grain',
