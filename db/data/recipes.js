@@ -139,7 +139,6 @@ export default [
     ],
     preference: 'vegetarian',
   },
-
   {
     name: 'Spaghetti aglio e olio',
     timeRequired: '20 mins',
