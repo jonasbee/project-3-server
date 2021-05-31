@@ -120,6 +120,11 @@ export default [
     category: 'Grain',
   },
   {
+    name: 'Peanut butter',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622479030/peanut-butter_c2eb0i.svg',
+    category: 'Protein',
+  },
+  {
     name: 'Raisin',
     icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622479030/raisins_kpmpib.svg',
     category: 'Fruit',
@@ -133,5 +138,50 @@ export default [
     name: 'Green pepper',
     icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622479030/food-and-restaurant_xsyljy.svg',
     category: 'Vegetable',
-  }
+  },
+  {
+    name: 'Sweet potato',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622494429/sweet-potato_hwkqif.svg',
+    category: 'Vegetable',
+  },  
+  {
+    name: 'Garlic',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385958/garlic_dg9teg.svg',
+    category: 'Vegetable',
+  },  
+  {
+    name: 'Almond',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622494479/almond_halfvr.svg',
+    category: 'Seed',
+  },  
+  {
+    name: 'Pomegranate',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385999/pomegranate_lrykgl.svg',
+    category: 'Fruit',
+  },  
+  {
+    name: 'Spring onion',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622494661/green-onion_bglbgr.svg',
+    category: 'Vegetable',
+  },  
+  {
+    name: 'Broccoli',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622494663/broccoli_c8cbng.svg',
+    category: 'Vegetable',
+  },  
+  {
+    name: 'Lemon',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622385979/lemon-1_uwfpzg.svg',
+    category: 'Fruit',
+  },  
+  {
+    name: 'Double cream',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622494753/ice-cream_vrt0pj.svg',
+    category: 'Dairy',
+  },
+  {
+    name: 'Salmon',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386007/salmon_bohota.svg',
+    category: 'Fish',
+  } 
 ]
