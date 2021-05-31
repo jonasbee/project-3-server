@@ -70,7 +70,6 @@ export default [
     ],
     preference: 'vegetarian',
   },
-
   {
     name: 'Oat cookies',
     timeRequired: '25 mins',
@@ -86,16 +85,15 @@ export default [
     difficulty: 'Easy',
     image: 'https://res.cloudinary.com/d-tsonev/image/upload/v1622412415/oat_cookies_10763_16x9_ojvfhi.jpg',
     ingredients: [
-      { name: 'oats', number: '125', metric: 'g' },
-      { name: 'bicarbonate of soda', number: '10', metric: 'g' },
-      { name: 'peanut (or other nut) butter', number: '125', metric: 'g' },
+      { name: 'oat', number: '125', metric: 'g' },
+      { name: 'baking powder', number: '10', metric: 'g' },
+      { name: 'peanut butter', number: '125', metric: 'g' },
       { name: 'caster sugar', number: '125', metric: 'g' },
       { name: 'egg', number: '1' },
-      { name: 'raisins ', number: '50', metric: 'g' }
+      { name: 'raisin ', number: '50', metric: 'g' }
     ],
     preference: 'vegetarian',
   },
-
   {
     name: 'Moroccan-style roasted veg',
     timeRequired: '45 mins',
@@ -117,7 +115,6 @@ export default [
     ],
     preference: 'vegetarian',
   },
-
   {
     name: 'Feta and pomegranate salad',
     timeRequired: '25 mins',
@@ -165,7 +162,6 @@ export default [
     ],
     preference: 'vegetarian',
   },
-
   {
     name: '4-ingredient soups',
     timeRequired: '45 mins',
@@ -219,7 +215,5 @@ export default [
     ],
     preference: 'vegetarian',
   }
-
-
 ]
 

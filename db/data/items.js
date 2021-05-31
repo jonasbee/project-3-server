@@ -15,6 +15,11 @@ export default [
     category: 'Dairy',
   },
   {
+    name: 'Caster sugar',
+    icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393357/sugar-cubes_ztrf7e.svg',
+    category: 'Sugar',
+  },
+  {
     name: 'Prawns',
     icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622386009/shrimp_bcamdy.svg',
     category: 'fish',
@@ -112,7 +117,7 @@ export default [
   {
     name: 'Sugar',
     icon: 'https://res.cloudinary.com/djxh1yrnv/image/upload/v1622393357/sugar-cubes_ztrf7e.svg',
-    category: 'Grain',
+    category: 'Sugar',
   },
   {
     name: 'Oat',
