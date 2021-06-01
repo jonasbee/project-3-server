@@ -9,6 +9,7 @@ import usersData from '../db/data/users.js'
 
 import Recipe from '../models/recipe.js'
 import recipeData from '../db/data/recipes.js'
+import inventoryItem from '../models/inventoryItem.js'
 
 async function seedDatabase() {
   try {
@@ -25,6 +26,40 @@ async function seedDatabase() {
     // ? Now I can seed my database using mongoose....
     const item = await Item.create(itemData)
     console.log(`🤖 ${item.length} recipes created!`)
+
+    // ? add inventoryItems to users
+    const dimisItem = {
+      item: item[0]._id,
+      quantity: 3,
+      expiryDate: '2022-05-22',
+      user: users[0]._id,
+      isShared: true,
+    }
+    await inventoryItem.create(dimisItem)
+    console.log(dimisItem)
+    const jonasItem = {
+      item: item[1]._id,
+      quantity: 4,
+      expiryDate: '2022-05-22',
+      user: users[1]._id,
+      isShared: true,
+    }
+    await inventoryItem.create(jonasItem)
+    const abusItem = {
+      item: item[2]._id,
+      quantity: 4,
+      expiryDate: '2022-05-22',
+      user: users[2]._id,
+      isShared: true,
+    }
+    await inventoryItem.create(abusItem)
+
+    // // ? Grab pokemon to comment on..
+    // const pokemonToCommentOn = pokemon[0]
+    // // ? Add the comment to the pokemon
+    // pokemonToCommentOn.comments.push(myComment)
+    // // ? Saves the pokemon
+    // const savedPokemon = await pokemonToCommentOn.save()
 
     // ? seeding the recipes    
     const recipe = await Recipe.create(recipeData)

@@ -38,9 +38,9 @@ async function checkForRecipe(req, res, next) {
         // * as soon as inventoryItem is equal to recipe ingredient
         // * it returns that item (so not undefined)
         console.log(index)
-        console.log(inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name))
+        console.log(inventoryItemList.find(inventoryItem => inventoryItem.item.name.toLowerCase() === recipe.ingredients[index].name.toLowerCase()))
         if (
-          (inventoryItemList.find(inventoryItem => inventoryItem.item.name === recipe.ingredients[index].name)) === undefined
+          (inventoryItemList.find(inventoryItem => inventoryItem.item.name.toLowerCase() === recipe.ingredients[index].name.toLowerCase())) === undefined
         ) {
           // gets executed if find() returns undefined
           foundPotentialRecipe = false

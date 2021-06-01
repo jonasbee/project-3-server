@@ -163,7 +163,7 @@ export default [
     preference: 'vegetarian',
   },
   {
-    name: '4-ingredient soups',
+    name: '4-ingredient soup',
     timeRequired: '45 mins',
     serves: '4',
     instructionSteps: [
@@ -180,7 +180,7 @@ export default [
     ingredients: [
       { name: 'onions', number: '2' },
       { name: 'garlic gloves', number: '2' },
-      { name: ' root vegetables,any kind ,peeled and cut into roughly 2cm/¾in chunks', number: '800',metric: 'g' },
+      { name: 'root vegetables, any kind, peeled and cut into roughly 2cm/¾in chunks', number: '800',metric: 'g' },
       { name: 'chicken or vegitable stock', number: '2' ,metric: 'cubes' },
       { name: ' oil', number: '2',metric: 'tbsp' },
       { name: 'frechly chopped parsley' }
@@ -208,7 +208,7 @@ export default [
       { name: 'broccoli', number: '150' ,metric: 'g' },
       { name: 'spring onions', number: '4' },
       { name: 'salmon', number: '240' ,metric: 'g' },
-      { name: ' oil', number: '1',metric: 'tbsp' },
+      { name: 'oil', number: '1',metric: 'tbsp' },
       { name: 'chilli', number: '1' ,metric: 'pinch' },
       { name: 'double cream', number: '100' ,metric: 'g' },
       { name: 'lemon', number: '0.5' }

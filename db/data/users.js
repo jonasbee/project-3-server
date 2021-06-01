@@ -11,7 +11,7 @@ export default [
     region: 'United Kingdom',
     country: 'United Kingdom',
     preference: 'vegetarian',
-    coordinates: ['48.783571', '9.156313'],
+    coordinates: ['51.579394', '-0.012636'],
   },
   {
     username: 'jonas',
@@ -24,7 +24,7 @@ export default [
     streetNo: '123',
     region: 'Baden-Württemberg',
     country: 'Germany',
-    coordinates: ['51.579394', '-0.012636'],
+    coordinates: ['48.783571', '9.156313'],
   },
   {
     username: 'abubakar',

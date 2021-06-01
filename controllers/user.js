@@ -26,6 +26,8 @@ async function register(req, res, next) {
       req.body.coordinates = [lat, lon]
     }
 
+    req.body.preference = req.body.preference.toLowerCase()
+
     const user = await User.create(req.body)
     res.status(200).json(user)
   } catch (e) {
