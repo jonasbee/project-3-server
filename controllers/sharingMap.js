@@ -22,7 +22,9 @@ async function index(req, res, next) {
     for (let i = 0; i < listOfSharingUsersItems.length; i++) {
       // ? create array
       // ? fill it with inventory items of that user
-      const listOfUserItems = listOfAllSharedInventoryItemsOfAllUsers.filter((item) => item.user._id === listOfSharingUsersItems[i].user._id)
+      const listOfUserItems = listOfAllSharedInventoryItemsOfAllUsers.filter((item) => {
+        return item.user._id === listOfSharingUsersItems[i].user._id
+      })
       // ? add it to new array
       listOfItemslistPerUser.push(listOfUserItems)
     }

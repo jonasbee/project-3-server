@@ -18,7 +18,7 @@
 @recipeId = 60acf2d23cc142cfc492d43d
 
 // abubakar1 token
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFkNDQ1NDdmOTE1NGYwMDFiZWU2YzUiLCJpYXQiOjE2MjIzODQ2NDUsImV4cCI6MTYyMjY0Mzg0NX0.Gt6QnhHW7TYIkFVKSHfkETs_8mbc8ZrxIui6y8OLhNY
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGI1NzBkZGU2MzJlYzMwOWIxZTQyOGMiLCJpYXQiOjE2MjI1NDU4MDIsImV4cCI6MTYyMjgwNTAwMn0.iTpVkOcupaNZ-L_MBFfYek06rKCXCMpmEf-wlgqf2sM
 // dimi token
 @token1 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGIxMjNjNzlkNDQyMDM3YmRiOGZkOWMiLCJpYXQiOjE2MjIyMjI4NTMsImV4cCI6MTYyMjQ4MjA1M30.od-nKZV82Jkq9EsQ4WtSmMmcQ6Aj0jVRdd_OQbdC9DA
 
@@ -65,8 +65,8 @@ POST http://localhost:4000/api/login
 content-type: application/json
 
 {
-  "email": "abubakar1@email.com",
-  "password": "pass"
+  "email": "abubakar@abubakar.com",
+  "password": "abubakar"
 }
 ###
 PUT http://localhost:4000/api/{{userId}}/update
