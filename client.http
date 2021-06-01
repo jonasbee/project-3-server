@@ -207,8 +207,8 @@ Content-Type: application/json
 
 ###
 // address in Germany
-GET https://nominatim.openstreetmap.org/search?q=100,+Johannesstraße,+Stuttgart,+Baden-Württemberg,+70176,+Germany&format=json&addressdetails=1&limit=1&polygon_svg=1
+GET https://nominatim.openstreetmap.org/search?q=100,+Johannesstraße,+Stuttgart,+70176,+Germany&format=json&addressdetails=1&limit=1&polygon_svg=1
 
 ###
 // address in UK
-GET https://nominatim.openstreetmap.org/search?q=114,+Whitechapel+High+St,+London,+E1+7QA,+United+Kingdom&format=json&addressdetails=1&limit=1&polygon_svg=1
+GET https://nominatim.openstreetmap.org/search?q=114,+Whitechapel+High+St,+London,+E1+7QA,+England&format=json&addressdetails=1&limit=1&polygon_svg=1

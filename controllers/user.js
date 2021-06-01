@@ -16,7 +16,6 @@ async function register(req, res, next) {
       req.body.city.replace(' ', '+'),
       req.body.street.replace(' ', '+'),
       req.body.streetNo.replace(' ', '+'),
-      req.body.region.replace(' ', '+'),
       req.body.country.replace(' ', '+')
     )
     console.log(data)
