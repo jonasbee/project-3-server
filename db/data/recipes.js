@@ -8,7 +8,7 @@ export default [
       'Meanwhile, lower the eggs into a separate pan of boiling water. Boil for 10 mins, then drain and rinse under cold water to cool.',
       'Remove the shells and halve or quarter.',
       'Whisk the oil with the vinegar in a large bowl; season. Stir through the onion, spinach, tomatoes, cucumber and olives.',
-      'Add the pasta and toss everything together to coat well in the dressing.' ,
+      'Add the pasta and toss everything together to coat well in the dressing.',
       'Fold in the tuna and most of the parsley, then transfer to plates or a serving platter.',
       'Top with the eggs, remaining parsley and extra black pepper to serve.'
     ],
@@ -90,7 +90,7 @@ export default [
       { name: 'peanut butter', number: '125', metric: 'g' },
       { name: 'caster sugar', number: '125', metric: 'g' },
       { name: 'egg', number: '1' },
-      { name: 'raisin ', number: '50', metric: 'g' }
+      { name: 'raisin', number: '50', metric: 'g' }
     ],
     preference: 'vegetarian',
   },
@@ -107,11 +107,11 @@ export default [
     difficulty: 'Easy',
     image: 'https://res.cloudinary.com/d-tsonev/image/upload/v1622413247/5-ingredient_33925_16x9_mistoi.jpg',
     ingredients: [
-      { name: 'peppers', number: '2', metric: 'tsp' },
-      { name: 'sweet potatoes', number: '2' },
-      { name: 'cherry tomatoes', number: '200',metric: 'g' },
-      { name: 'olive oil', number: '1' ,metric: 'tsp' },
-      { name: 'harissa', number: '1',metric: 'tsp' }
+      { name: 'pepper', number: '2', metric: 'tsp' },
+      { name: 'sweet potato', number: '2' },
+      { name: 'cherry tomato', number: '200', metric: 'g' },
+      { name: 'olive oil', number: '1', metric: 'tsp' },
+      { name: 'harissa', number: '1', metric: 'tsp' }
     ],
     preference: 'vegetarian',
   },
@@ -132,14 +132,13 @@ export default [
     ingredients: [
       { name: 'feta', number: '200', metric: 'g' },
       { name: 'garlic gloves', number: '2' },
-      { name: 'almont flakes', number: '100',metric: 'g' },
-      { name: 'mix rocket', number: '120' ,metric: 'g' },
-      { name: 'olive oil', number: '3',metric: 'tbsp' },
+      { name: 'almont flakes', number: '100', metric: 'g' },
+      { name: 'mix rocket', number: '120', metric: 'g' },
+      { name: 'olive oil', number: '3', metric: 'tbsp' },
       { name: 'pomegranate', number: '2', metric: 'seeds only' }
     ],
     preference: 'vegetarian',
   },
-
   {
     name: 'Spaghetti aglio e olio',
     timeRequired: '20 mins',
@@ -157,33 +156,8 @@ export default [
       { name: 'pasta', number: '400', metric: 'g' },
       { name: 'garlic gloves', number: '3' },
       { name: 'chilly', number: '3' },
-      { name: 'parsley', number: '1' ,metric: 'tbsp' },
-      { name: 'olive oil', number: '5',metric: 'tbsp' }
-    ],
-    preference: 'vegetarian',
-  },
-  {
-    name: '4-ingredient soup',
-    timeRequired: '45 mins',
-    serves: '4',
-    instructionSteps: [
-      'Heat the oil in a large non-stick saucepan and gently fry the onions for 6–8 minutes, or until softened and beginning to brown, stirring regularly.',
-      'Add the vegetable chunks and cook for 5 minutes more, stirring occasionally. Stir in the garlic and cook for a few seconds more.',
-      'Crumble over the stock cubes, add 1 litre/1¾ pints water and bring to the boil.',
-      'Reduce the heat to a simmer, cover the pan loosely with a lid and cook for about 20 minutes or until the vegetables are very soft, stirring occasionally.',
-      'Blitz the soup with a stick blender until very smooth and season with plenty of ground black pepper.',
-      'Add a splash of just-boiled water if the soup is a little thick', 
-      'Ladle into bowls, top with freshly chopped parsley, if using, and serve with the bread.'
-    ],
-    difficulty: 'Easy',
-    image: 'https://res.cloudinary.com/d-tsonev/image/upload/v1622467051/root_vegetable_soup_14910_16x9_ho2ouo.jpg',
-    ingredients: [
-      { name: 'onions', number: '2' },
-      { name: 'garlic gloves', number: '2' },
-      { name: 'root vegetables, any kind, peeled and cut into roughly 2cm/¾in chunks', number: '800',metric: 'g' },
-      { name: 'chicken or vegitable stock', number: '2' ,metric: 'cubes' },
-      { name: ' oil', number: '2',metric: 'tbsp' },
-      { name: 'frechly chopped parsley' }
+      { name: 'parsley', number: '1', metric: 'tbsp' },
+      { name: 'olive oil', number: '5', metric: 'tbsp' }
     ],
     preference: 'vegetarian',
   },
@@ -204,13 +178,13 @@ export default [
     difficulty: 'Easy',
     image: 'https://res.cloudinary.com/d-tsonev/image/upload/v1622467625/salmon_broccoli_pasta_39926_16x9_bdm16d.jpg',
     ingredients: [
-      { name: 'pasta', number: '150' ,metric: 'g' },
-      { name: 'broccoli', number: '150' ,metric: 'g' },
+      { name: 'pasta', number: '150', metric: 'g' },
+      { name: 'broccoli', number: '150', metric: 'g' },
       { name: 'spring onions', number: '4' },
-      { name: 'salmon', number: '240' ,metric: 'g' },
-      { name: 'oil', number: '1',metric: 'tbsp' },
-      { name: 'chilli', number: '1' ,metric: 'pinch' },
-      { name: 'double cream', number: '100' ,metric: 'g' },
+      { name: 'salmon', number: '240', metric: 'g' },
+      { name: ' oil', number: '1', metric: 'tbsp' },
+      { name: 'chilli', number: '1', metric: 'pinch' },
+      { name: 'double cream', number: '100', metric: 'g' },
       { name: 'lemon', number: '0.5' }
     ],
     preference: 'vegetarian',
