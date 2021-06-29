@@ -1,24 +1,4 @@
-<<<<<<< HEAD
-Cooking features
-## This is the dopest README you have ever read
+Scope: One week (group of three) to create MERN-stack application.
+Realization: As a registered user you can add food items from stock to your personal inventory. You can then find recipes matching your personal inventory as well as find&share food via a mapbox map (using “React-Map-GL”).
 
-### The dopest mebers of this dopest group are:
-- Abubakar
-- Dimi
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Dimitars-branch
-# The Foodists
-
-## This is the dopest README you have ever read
-
-## Starring:
-- Jonas
-- Dimi
-- Abubakar
-<<<<<<< HEAD
-=======
->>>>>>> 8da6454ae6a932d2ff11b58b082f93af7277dd07
->>>>>>> Dimitars-branch
+[Here you can find frontend Repo](https://github.com/jonasbee/project-3-client)
